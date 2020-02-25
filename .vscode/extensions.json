@@ -6,6 +6,7 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "dsznajder.Es7-react-js-snippets",
-    "eamodio.gitlens"
+    "eamodio.gitlens",
+    "silvenon.mdx"
   ]
 }
