@@ -23,20 +23,3 @@ module.exports = {
     '@storybook/addon-docs/react/preset',
   ],
 };
-
-// storybook 공식문서 에 나와 있는 코드
-
-// module.exports = {
-//   stories: ["../src/**/*.stories.tsx"],
-//   webpackFinal: async config => {
-//     config.module.rules.push({
-//       test: /\.(ts|tsx)$/,
-//       loader: require.resolve("babel-loader"),
-//       options: {
-//         presets: [["react-app", { flow: false, typescript: true }]]
-//       }
-//     });
-//     config.resolve.extensions.push(".ts", ".tsx");
-//     return config;
-//   }
-// };
