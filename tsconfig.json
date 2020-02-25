@@ -1,0 +1,77 @@
+{
+  "compilerOptions": {
+    // "incremental": true,                   /* Enable incremental compilation */
+    "target": "ESNEXT",
+    // 사용할 ECMAScript 버전 설정: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "module": "ESNEXT",
+    // 모듈 설정: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'.
+    "lib": ["es5", "es6", "dom", "es2016", "es2017"],
+    /* Specify library files to be included in the compilation. */
+    "allowJs": true, // 자바스크립트 파일 컴파일 허용 여부.
+    // import add from './add.js' 와 같이 js파일 import 허용
+    // "checkJs": true,                       // allowJs 옵션이 true여서 js파일 모듈을 사용시 js파일의 오류 검사 여부
+    "jsx": "preserve",
+    /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
+    // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
+    // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
+    // "sourceMap": true,                     /* Generates corresponding '.map' file. */
+    // "outFile": "./",                       /* Concatenate and emit output to single file. */
+    "outDir": "build",
+    /* Redirect output structure to the directory. */
+    "rootDirs": ["src", "stories"], // 입력파일의 rootDir 설정 (outDir옵션을 사용할때만 사용)
+    // "composite": true,                     /* Enable project compilation */
+    // "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */
+    "removeComments": false, // 주석 삭제
+    /* Do not emit comments to output. */
+    "resolveJsonModule": true, // JSON모듈(.json) import 허용
+    "noEmit": true, // 결과파일을 저장하지 않음
+    // "importHelpers": true,                 /* Import emit helpers from 'tslib'. */
+    // "downlevelIteration": true,            /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
+    // "isolatedModules": true,               /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+    "skipLibCheck": true, // 모든 선언파일(*.d.ts)의 유형검사를 건너뛸지 여부
+    "strict": true, // 모든 엄격한 타입 검사 옵션을 활성화
+    // "noImplicitAny": true,                 // any타입 금지
+    // "strictNullChecks": true,              /* Enable strict null checks. */
+    // "strictFunctionTypes": true,           /* Enable strict checking of function types. */
+    // "strictBindCallApply": true,           /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
+    // "strictPropertyInitialization": true,  /* Enable strict checking of property initialization in classes. */
+    // "noImplicitThis": true,                // this 타입을 명시적으로 지정하지 않으면 에러 발생
+    // "alwaysStrict": true,                  /* Parse in strict mode and emit "use strict" for each source file. */
+
+    /* Additional Checks */
+    "noUnusedLocals": true, // 사용안된 지역변수에 대한 오류 보고 여부
+    "noUnusedParameters": true, // 사용안된 파라미터에 대한 오류 보고 여부
+    // "noImplicitReturns": true,             /* Report error when not all code paths in function return a value. */
+    // "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
+
+    /* Module Resolution Options */
+    "moduleResolution": "node", // 모듈 (검색)해석 방식 설정
+    "baseUrl": "src" /* Base directory to resolve non-absolute module names. */ ,
+    // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
+    // "typeRoots": [],                       /* List of folders to include type definitions from. */
+    // "types": [],                           /* Type declaration files to be included in compilation. */
+    "allowSyntheticDefaultImports": true, // export default 를 export 한 값들을 가지는 객체로 설정
+    // export class Foo { member: string; } 을 할시 (b.ts)
+    // export default { Foo } 가 기본으로 설정된다.
+    "esModuleInterop": true,
+    /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
+    // "allowUmdGlobalAccess": true,          /* Allow accessing UMD globals from modules. */
+
+    /* Source Map Options */
+    // "sourceRoot": "",                      /* Specify the location where debugger should locate TypeScript files instead of source locations. */
+    // "mapRoot": "",                         /* Specify the location where debugger should locate map files instead of generated locations. */
+    // "inlineSourceMap": true,               /* Emit a single file with source maps instead of having a separate file. */
+    // "inlineSources": true,                 /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
+
+    /* Experimental Options */
+    // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
+    // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
+
+    /* Advanced Options */
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "scripts"]
+}

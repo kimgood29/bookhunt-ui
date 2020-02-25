@@ -1,0 +1,24 @@
+// VSCode Snippet 설정
+// https://bit.ly/2HQHMgC 이거 이용하면 쉽게 Snippet 문법 생성 가능
+{
+  "Default Styled React Component": {
+    "prefix": "styled-react-component",
+    "body": [
+      "import React from 'react';",
+      "import styled from 'styled-components'",
+      "",
+      "//#region style",
+      "// 스타일 코드 작성",
+      "//#endregion",
+      "",
+      "interface I${TM_FILENAME_BASE/(^[a-z])|\\-([0-9a-z])/${1:/capitalize}${2:/capitalize}/g}Props {}",
+      "",
+      "const ${TM_FILENAME_BASE/(^[a-z])|\\-([0-9a-z])/${1:/capitalize}${2:/capitalize}/g}: React.FunctionComponent<I${TM_FILENAME_BASE/(^[a-z])|\\-([0-9a-z])/${1:/capitalize}${2:/capitalize}/g}Props> = () => { ",
+      "  return <></>;",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE/(^[a-z])|\\-([0-9a-z])/${1:/capitalize}${2:/capitalize}/g};"
+    ],
+    "description": "Default Styled React Component"
+  }
+}

@@ -1,0 +1,19 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# compiled output
+build
+
+# dependencies
+/node_modules
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/react.code-snippets.json
+
+
+# misc
+package-lock.json
