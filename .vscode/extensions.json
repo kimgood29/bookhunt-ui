@@ -1,0 +1,11 @@
+// VSCode 확장기능 설정
+// VSCode가 실행될 때 확장기능이 설치되어 있는지 체크하고 없으면 설치를 유도
+
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "dsznajder.Es7-react-js-snippets",
+    "eamodio.gitlens"
+  ]
+}
