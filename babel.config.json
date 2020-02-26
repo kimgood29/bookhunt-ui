@@ -12,7 +12,14 @@
         "useBuiltIns": "usage"
       }
     ],
-    "@babel/preset-react"
+    "@babel/preset-react",
+    [
+      "react-app",
+      {
+        "flow": false,
+        "typescript": true
+      }
+    ]
   ],
   "plugins": [
     "@babel/plugin-transform-parameters",
