@@ -13,7 +13,3 @@ build
 !.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/react.code-snippets.json
-
-
-# misc
-package-lock.json
